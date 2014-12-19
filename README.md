@@ -39,6 +39,10 @@ vendor/bin/phprest-service-orm migrations:migrate
 vendor/bin/phprest-service-orm fixtures:set
 ```
 
+## 5. Storage dir
+
+Storage dir (```app/storage```) has to be writeable by the web server.
+
 # Create Api Documentation
 
 *(from the root of your project dir)*
@@ -50,3 +54,19 @@ vendor/bin/swagger -b public/docs/bootstrap.php -u http://localhost/docs/jsondat
 ## Reach your api documentation
 
 [http://localhost/docs/index.html](http://localhost/docs/index.html)
+
+# Api testing (spec tests)
+
+*(from the root of your project dir)*
+
+```cli
+cd specs
+npm install
+cd ..
+vendor/bin/phprest-service-orm fixtures:set
+specs/node_modules/jasmine-node/bin/jasmine-node --verbose specs/tests
+```
+
+# Tips
+
+* Separate your docs to an individual vhost
