@@ -4,7 +4,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 $paths = require __DIR__ . '/../paths.php';
 
 return getApplication(
-    getApplicationConfig('phprest', '0.1', $paths),
+    getApplicationConfig('phprest', '0.1', false, $paths),
     $paths
 );
 
@@ -25,14 +25,16 @@ function getApplication(\Phprest\Config $config, array $paths)
 }
 
 /**
+ * @param string $vendor
+ * @param string|integer$apiVersion
+ * @param boolean $debug
  * @param array $paths
  *
  * @return \Phprest\Config
  */
-function getApplicationConfig($vendor, $apiVersion, array $paths)
+function getApplicationConfig($vendor, $apiVersion, $debug, array $paths)
 {
-    $config = new \Phprest\Config($vendor, $apiVersion);
-    $config->setDebug(false);
+    $config = new \Phprest\Config($vendor, $apiVersion, $debug);
 
     require_once $paths['config.api_version_handler'];
     require_once $paths['config.logger'];
