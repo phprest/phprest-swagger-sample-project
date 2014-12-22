@@ -6,8 +6,8 @@
 # Requirements
 
 * Composer
-* Php 5.4 <=
-* MySql 5.x <=
+* PHP 5.4 >=
+* MySql 5.x >=
 
 # Installation
 
