@@ -17,13 +17,17 @@
 composer -sdev create-project phprest/phprest-sample-project /path/to/your/project
 ```
 
-## 2. Create database
+## 2. Configure your database settings
+
+In ```app/config/orm.php``` set your database credentials.
+
+## 3. Create database
 
 ```cli
 create database tesselboard collate=utf8mb4_unicode_ci;
 ```
 
-## 3. Database migrations
+## 4. Database migrations
 
 *(from the root of your project dir)*
 
@@ -31,7 +35,7 @@ create database tesselboard collate=utf8mb4_unicode_ci;
 vendor/bin/phprest-service-orm migrations:migrate
 ```
 
-## 4. Database fixtures
+## 5. Database fixtures
 
 *(from the root of your project dir)*
 
@@ -39,7 +43,7 @@ vendor/bin/phprest-service-orm migrations:migrate
 vendor/bin/phprest-service-orm fixtures:set
 ```
 
-## 5. Storage dir
+## 6. Storage dir
 
 Storage dir (```app/storage```) has to be writeable by the web server.
 
