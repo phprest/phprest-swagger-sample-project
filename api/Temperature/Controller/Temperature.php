@@ -41,11 +41,12 @@ class Temperature extends Controller
      * )
      *
      * @param Request $request
+     * @param string $version
      * @param integer $id
      * @return Response\Ok
      * @throws Exception\NotFound
      */
-    public function get(Request $request, $id)
+    public function get(Request $request, $version, $id)
     {
         $repo = $this->serviceOrm()->getRepository('Api\Temperature\Entity\Temperature');
 
@@ -150,11 +151,12 @@ class Temperature extends Controller
      * )
      *
      * @param Request $request
+     * @param string $version
      * @param integer $id
      * @return Response\NoContent
      * @throws Exception\NotFound
      */
-    public function delete(Request $request, $id)
+    public function delete(Request $request, $version, $id)
     {
         $repo = $this->serviceOrm()->getRepository('Api\Temperature\Entity\Temperature');
 
@@ -239,11 +241,12 @@ class Temperature extends Controller
      * )
      *
      * @param Request $request
+     * @param string $version
      * @param integer $id
      * @return Response\Ok
      * @throws Exception\NotFound
      */
-    public function options(Request $request, $id)
+    public function options(Request $request, $version, $id)
     {
         $repo = $this->serviceOrm()->getRepository('Api\Temperature\Entity\Temperature');
 

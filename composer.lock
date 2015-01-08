@@ -1281,12 +1281,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phprest/phprest.git",
-                "reference": "2fbd7f93b02152470114615a9f56f8d5344bc0c6"
+                "reference": "201f0def58c8002e3011a81c7caa43cc1e2e8ae1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phprest/phprest/zipball/2fbd7f93b02152470114615a9f56f8d5344bc0c6",
-                "reference": "2fbd7f93b02152470114615a9f56f8d5344bc0c6",
+                "url": "https://api.github.com/repos/phprest/phprest/zipball/201f0def58c8002e3011a81c7caa43cc1e2e8ae1",
+                "reference": "201f0def58c8002e3011a81c7caa43cc1e2e8ae1",
                 "shasum": ""
             },
             "require": {
@@ -1332,7 +1332,7 @@
                 "rest",
                 "restful"
             ],
-            "time": "2015-01-07 16:59:37"
+            "time": "2015-01-08 18:18:00"
         },
         {
             "name": "phprest/phprest-service-orm",
