@@ -45,6 +45,8 @@ vendor/bin/phprest-service-orm fixtures:set
 
 ## 6. Storage dir
 
+*(from the root of your project dir)*
+
 Storage dir (```app/storage```) has to be writeable by the web server.
 
 # Create Api Documentation
@@ -58,6 +60,28 @@ vendor/bin/swagger -b public/docs/bootstrap.php -u http://localhost/docs/jsondat
 ## Reach your api documentation
 
 [http://localhost/docs/index.html](http://localhost/docs/index.html)
+
+# List your routes
+
+*(from the root of your project dir)*
+
+```cli
+vendor/bin/phprest routes:get
+```
+
+You should get something like this:
+
+| Method  | Route                                   | Handler                                             |
+|---------|-----------------------------------------|-----------------------------------------------------|
+| OPTIONS | /{version:any}/camera                   | \Api\Camera\Controller\Camera::options              |
+| GET     | /{version:any}/camera                   | \Api\Camera\Controller\Camera::get                  |
+| POST    | /{version:any}/camera                   | \Api\Camera\Controller\Camera::post                 |
+| GET     | /{version:any}/temperatures             | \Api\Temperature\Controller\Temperature::getAll     |
+| POST    | /{version:any}/temperatures             | \Api\Temperature\Controller\Temperature::post       |
+| OPTIONS | /{version:any}/temperatures             | \Api\Temperature\Controller\Temperature::optionsAll |
+| OPTIONS | /{version:any}/temperatures/{id:number} | \Api\Temperature\Controller\Temperature::options    |
+| GET     | /{version:any}/temperatures/{id:number} | \Api\Temperature\Controller\Temperature::get        |
+| DELETE  | /{version:any}/temperatures/{id:number} | \Api\Temperature\Controller\Temperature::delete     |
 
 # Api testing (spec tests)
 
