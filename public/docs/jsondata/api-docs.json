@@ -1,0 +1,13 @@
+{
+    "basePath": "http://localhost:21000/server/docs/jsondata",
+    "apiVersion": "0.1",
+    "swaggerVersion": "1.2",
+    "apis": [
+        {
+            "path": "/camera.{format}"
+        },
+        {
+            "path": "/temperatures.{format}"
+        }
+    ]
+}

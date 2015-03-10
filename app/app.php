@@ -19,6 +19,7 @@ function getApplication(\Phprest\Config $config, array $paths)
     $app = new \Phprest\Application($config);
 
     require_once $paths['services'];
+    require_once $paths['config.logger'];
     require_once $paths['routes'];
 
     return $app;
@@ -35,8 +36,6 @@ function getApplication(\Phprest\Config $config, array $paths)
 function getApplicationConfig($vendor, $apiVersion, $debug, array $paths)
 {
     $config = new \Phprest\Config($vendor, $apiVersion, $debug);
-
-    require_once $paths['config.logger'];
 
     return $config;
 }

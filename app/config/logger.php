@@ -1,12 +1,13 @@
 <?php
 
 use Phprest\Service\Logger\Config as LoggerConfig;
-use Phprest\Service\Logger\Service as LoggerService;
 use Monolog\Handler\StreamHandler;
 
-$loggerHandlers[] = new StreamHandler(__DIR__ . '/../storage/log', \Monolog\Logger::DEBUG);
+/** @var \Phprest\Application $app */
 
-/** @var \Phprest\Config $config */
+/** @var \Monolog\Logger $logger */
+$logger = $app->getContainer()->get(LoggerConfig::getServiceName());
 
-$config->setLoggerConfig(new LoggerConfig('phprest', $loggerHandlers));
-$config->setLoggerService(new LoggerService());
+$logger->pushHandler(
+    new StreamHandler(__DIR__ . '/../storage/log', \Monolog\Logger::DEBUG)
+);
