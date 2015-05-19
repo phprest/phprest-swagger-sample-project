@@ -11,7 +11,7 @@ use Doctrine\ORM\Mapping as Orm;
  *
  * @Hateoas\Relation(
  *      "self",
- *      href = @Hateoas\Route("/temperatures", parameters = {"id" = "expr(object.id)"}, absolute = true)
+ *      href = @Hateoas\Route("/temperatures", parameters = {"id" = "expr(object.id)"}, absolute = false)
  * )
  *
  * @Orm\Entity

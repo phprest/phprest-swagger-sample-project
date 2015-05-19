@@ -11,16 +11,16 @@ use Doctrine\ORM\Mapping as Orm;
  *
  * @Hateoas\Relation(
  *      "self",
- *      href = @Hateoas\Route("/camera", absolute = true)
+ *      href = @Hateoas\Route("/camera", absolute = false)
  * )
  * @Hateoas\Relation(
  *      "transition.on::post",
- *      href = @Hateoas\Route("/camera?transition=on", absolute = true),
+ *      href = @Hateoas\Route("/camera?transition=on", absolute = false),
  *      exclusion = @Hateoas\Exclusion(excludeIf = "expr('on' === object.getState())"))
  * )
  * @Hateoas\Relation(
  *      "transition.off::post",
- *      href = @Hateoas\Route("/camera?transition=off", absolute = true),
+ *      href = @Hateoas\Route("/camera?transition=off", absolute = false),
  *      exclusion = @Hateoas\Exclusion(excludeIf = "expr('off' === object.getState())"))
  * )
  *

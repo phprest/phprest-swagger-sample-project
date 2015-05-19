@@ -79,6 +79,8 @@ class Temperature extends Controller
      * @return Response\Ok
      * @throws Exception\NotFound
      * @throws Exception\BadRequest
+     *
+     * TODO Refactor in your project. This is just a dummy example but it does a lot.
      */
     public function getAll(Request $request)
     {

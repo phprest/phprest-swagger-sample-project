@@ -4,7 +4,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 $paths = require __DIR__ . '/../paths.php';
 
 return getApplication(
-    getApplicationConfig('phprest', '0.1', false, $paths),
+    getApplicationConfig('phprest', '0.1', true, $paths),
     $paths
 );
 
