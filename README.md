@@ -54,7 +54,7 @@ Storage dir (```app/storage```) has to be writeable by the web server.
 *(from the root of your project dir)*
 
 ```cli
-vendor/bin/swagger -b public/docs/bootstrap.php -u http://localhost/docs/jsondata api/ -o public/docs/jsondata
+vendor/bin/swagger -b public/bootstrap.php -u http://localhost/docs/jsondata api/ -o public/docs/jsondata
 ```
 
 ## Reach your api documentation
