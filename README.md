@@ -101,7 +101,7 @@ specs/node_modules/jasmine-node/bin/jasmine-node --verbose specs/tests
 * Use [API Blueprint](https://apiblueprint.org/) for documentation instead of Swagger
     * so you can eliminate your inner code API documentation
 
-# Nginx configuration
+## Nginx sample configuration
 
 ```
 server {
