@@ -1,4 +1,4 @@
-# Phprest Sample Project
+# Phprest Swagger Sample Project
 
 [![Author](http://img.shields.io/badge/author-@adammbalogh-blue.svg?style=flat-square)](https://twitter.com/adammbalogh)
 [![Software License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
@@ -14,7 +14,7 @@
 ## 1. Create project
 
 ```cli
-composer -sdev create-project phprest/phprest-sample-project /path/to/your/project
+composer -sdev create-project phprest/phprest-swagger-sample-project /path/to/your/project
 ```
 
 ## 2. Configure your database settings
