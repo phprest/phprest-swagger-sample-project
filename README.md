@@ -100,3 +100,34 @@ specs/node_modules/jasmine-node/bin/jasmine-node --verbose specs/tests
 * Separate your docs to an individual vhost
 * Use [API Blueprint](https://apiblueprint.org/) for documentation instead of Swagger
     * so you can eliminate your inner code API documentation
+
+# Nginx configuration
+
+```
+server {
+    listen 80;
+    server_name localhost;
+
+    root /var/www/application/public;
+    index index.php;
+
+    location / {
+        try_files $uri $uri/ @rewrite;
+    }
+
+    location ~ \.php$ {
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        fastcgi_pass unix:/var/run/php5-fpm.sock;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    location @rewrite {
+        rewrite ^ /index.php;
+    }
+
+    error_log /var/log/nginx/application_error.log;
+}
+```
+
