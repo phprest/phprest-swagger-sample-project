@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "54366a3783b854c8b6d66cb33d294a9e",
+    "hash": "f75afb5fad9a2ee5fac8196b4944c378",
     "packages": [
         {
             "name": "alexbilbie/proton",
@@ -1317,7 +1317,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phprest/phprest/zipball/a02d10136d53e8fe425cae511ef6eb59e48a29a9",
+                "url": "https://api.github.com/repos/phprest/phprest/zipball/207f164ebcead6ecfc9cc96831498c003562ae71",
                 "reference": "a02d10136d53e8fe425cae511ef6eb59e48a29a9",
                 "shasum": ""
             },

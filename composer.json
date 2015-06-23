@@ -1,5 +1,5 @@
 {
-    "name": "phprest/phprest-sample-project",
+    "name": "phprest/phprest-swagger-sample-project",
     "description": "Phprest Sample Project.",
     "keywords": ["phprest", "rest", "restful", "framework"],
     "license": "MIT",
