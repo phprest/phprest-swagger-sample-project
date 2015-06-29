@@ -1313,17 +1313,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phprest/phprest.git",
-                "reference": "a02d10136d53e8fe425cae511ef6eb59e48a29a9"
+                "reference": "3fe2eda178d9d01ee804d398f3c3743bfef4fce4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phprest/phprest/zipball/207f164ebcead6ecfc9cc96831498c003562ae71",
-                "reference": "a02d10136d53e8fe425cae511ef6eb59e48a29a9",
+                "url": "https://api.github.com/repos/phprest/phprest/zipball/3fe2eda178d9d01ee804d398f3c3743bfef4fce4",
+                "reference": "3fe2eda178d9d01ee804d398f3c3743bfef4fce4",
                 "shasum": ""
             },
             "require": {
                 "alexbilbie/proton": "~1.4.0",
-                "league/booboo": "1.0.0",
+                "league/booboo": "~1.0.0",
                 "monolog/monolog": "~1.12.0",
                 "php": ">=5.4.0",
                 "stack/builder": "~1.0.3",
@@ -1340,8 +1340,7 @@
             "suggest": {
                 "phprest/phprest-service-orm": "For managing Relational Databases.",
                 "phprest/phprest-service-request-filter": "For filtering Entites.",
-                "phprest/phprest-service-validator": "For validating Entities.",
-                "zircote/swagger-php": "For creating your Api documentation."
+                "phprest/phprest-service-validator": "For validating Entities."
             },
             "bin": [
                 "bin/phprest"
@@ -1373,7 +1372,7 @@
                 "rest",
                 "restful"
             ],
-            "time": "2015-05-12 13:02:38"
+            "time": "2015-06-28 08:43:18"
         },
         {
             "name": "phprest/phprest-service-orm",
@@ -1381,12 +1380,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phprest/phprest-service-orm.git",
-                "reference": "969891394d92764e3685ee89550bb24ba62de3fe"
+                "reference": "5d2ca960be91904323bfaee7a6577bd94e767357"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phprest/phprest-service-orm/zipball/969891394d92764e3685ee89550bb24ba62de3fe",
-                "reference": "969891394d92764e3685ee89550bb24ba62de3fe",
+                "url": "https://api.github.com/repos/phprest/phprest-service-orm/zipball/5d2ca960be91904323bfaee7a6577bd94e767357",
+                "reference": "5d2ca960be91904323bfaee7a6577bd94e767357",
                 "shasum": ""
             },
             "require": {
@@ -1429,7 +1428,7 @@
                 "restful",
                 "service"
             ],
-            "time": "2015-03-04 22:59:32"
+            "time": "2015-06-28 18:33:28"
         },
         {
             "name": "phprest/phprest-service-request-filter",
@@ -1437,12 +1436,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phprest/phprest-service-request-filter.git",
-                "reference": "c29fa728a9ff8d5d1bd0d40257da095bfd603192"
+                "reference": "e04a8b416dcbfdb98a0282856300001980b43c49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phprest/phprest-service-request-filter/zipball/c29fa728a9ff8d5d1bd0d40257da095bfd603192",
-                "reference": "c29fa728a9ff8d5d1bd0d40257da095bfd603192",
+                "url": "https://api.github.com/repos/phprest/phprest-service-request-filter/zipball/e04a8b416dcbfdb98a0282856300001980b43c49",
+                "reference": "e04a8b416dcbfdb98a0282856300001980b43c49",
                 "shasum": ""
             },
             "require": {
@@ -1476,7 +1475,7 @@
                 "restful",
                 "service"
             ],
-            "time": "2015-03-04 23:03:35"
+            "time": "2015-06-29 10:29:10"
         },
         {
             "name": "phprest/phprest-service-validator",
@@ -1484,12 +1483,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phprest/phprest-service-validator.git",
-                "reference": "3139d7840ccb94162872e059c8d9673b39df0d4e"
+                "reference": "72690945ebeff5bbc32f3c7792ea5a77cc929164"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phprest/phprest-service-validator/zipball/3139d7840ccb94162872e059c8d9673b39df0d4e",
-                "reference": "3139d7840ccb94162872e059c8d9673b39df0d4e",
+                "url": "https://api.github.com/repos/phprest/phprest-service-validator/zipball/72690945ebeff5bbc32f3c7792ea5a77cc929164",
+                "reference": "72690945ebeff5bbc32f3c7792ea5a77cc929164",
                 "shasum": ""
             },
             "require": {
@@ -1524,7 +1523,7 @@
                 "service",
                 "validator"
             ],
-            "time": "2015-03-04 23:05:27"
+            "time": "2015-06-29 10:34:16"
         },
         {
             "name": "psr/log",
